@@ -38,9 +38,8 @@ const CardSection = () => {
     <div>
       <section className="items-center grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto py-10 px-5">
         {cardDetails.map((card, index) => (
-          <div className="col-span-1">
+          <div className="col-span-1" key={index}>
             <Card
-              key={index}
               image={card.image}
               title={card.title}
               description={card.description}
